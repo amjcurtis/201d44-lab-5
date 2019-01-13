@@ -93,7 +93,6 @@ function sumArray(sumArr) { //eslint-disable-line
     var inputArgs = sumArr; // Save inputted array as variable
     var pairOne = sum(inputArgs[0], inputArgs[1])[0]; // Add first pair of numbers of inputted array arg
     var elementOne = sum(pairOne, inputArgs[2])[0]; // Sum of all the numbers of inputted array arg
-    // ^ Need to revise code to be able to handle input array containing more than just 3 numbers?
     console.log('Sum of numbers of inputted array argument:', elementOne);
     var msgQ4 = sumArr + ' was passed in as an array of numbers, and ' + elementOne + ' is their sum.';
     console.log(msgQ4);
@@ -122,7 +121,6 @@ function multiplyArray(multArr) { //eslint-disable-line
     var inputArg = multArr; // Save inputted array as variable
     var pair1 = multiply(inputArg[0], inputArg[1])[0]; // Multiply first pair of numbers of inputted array arg
     var elemOne = multiply(pair1, inputArg[2])[0]; // Product of all 3 numbers of inputted array arg
-    // ^ Need to revise code to be able to handle input array containing more than just 3 numbers?
     console.log('Product of numbers of inputted array argument:', elemOne);
     var msgQ5 = 'The numbers ' + inputArg + ' have a product of ' + elemOne + '.';
     var output = [elemOne, msgQ5];
@@ -157,7 +155,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     var anyArray = dynamicArray;
     for (var i = 0; i < anyArray.length; i++) {
         var prod = multiply(anyArray[i], anyArray[i+1])[0];
-        console.log('Result of prod is', prod);
+        console.log('Product of ' + anyArray[i] + ' times ' +  + ' is', prod);
         
         
     }
