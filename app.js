@@ -156,8 +156,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     for (var i = 0; i < anyArray.length; i++) {
         var prod = multiply(anyArray[i], anyArray[i+1])[0];
         console.log('Product of ' + anyArray[i] + ' times ' +  + ' is', prod);
-        
-        
+       
     }
     var msg = 'The numbers ' + anyArray + ' have a product of ' + + '.';
     console.log('msg says:', msg);
